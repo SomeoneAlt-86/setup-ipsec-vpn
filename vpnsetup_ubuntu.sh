@@ -787,10 +787,10 @@ vpnsetup() {
   start_setup
   wait_for_apt
   #update_apt_cache
-  install_setup_pkgs
+  #install_setup_pkgs
   detect_ip
-  install_vpn_pkgs
-  install_nss_pkgs
+  #install_vpn_pkgs
+  #install_nss_pkgs
   install_fail2ban
   get_helper_scripts
   get_libreswan
@@ -799,7 +799,7 @@ vpnsetup() {
   update_sysctl
   update_iptables
   apply_gcp_mtu_fix
-  enable_on_boot
+  #enable_on_boot
   start_services
   show_vpn_info
   #set_up_ikev2
