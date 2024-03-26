@@ -799,7 +799,7 @@ vpnsetup() {
   update_sysctl
   update_iptables
   apply_gcp_mtu_fix
-  #enable_on_boot
+  enable_on_boot
   start_services
   show_vpn_info
   #set_up_ikev2
