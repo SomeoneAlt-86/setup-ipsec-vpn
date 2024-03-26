@@ -772,7 +772,29 @@ EOF
 }
 
 vpnsetup() {
+  check_root
+  check_vz
+  check_lxc
+  check_os
+  check_iface
+  check_creds
+  check_dns
+  check_server_dns
+  check_client_name
+  check_subnets
+  check_iptables
+  check_libreswan
+  start_setup
+  wait_for_apt
+  #update_apt_cache
+  install_setup_pkgs
   detect_ip
+  install_vpn_pkgs
+  install_nss_pkgs
+  install_fail2ban
+  get_helper_scripts
+  get_libreswan
+  install_libreswan
   create_vpn_config
   update_sysctl
   update_iptables
@@ -780,6 +802,7 @@ vpnsetup() {
   enable_on_boot
   start_services
   show_vpn_info
+  #set_up_ikev2
 }
 
 ## Defer setup until we have the complete script
