@@ -780,7 +780,6 @@ vpnsetup() {
   enable_on_boot
   start_services
   show_vpn_info
-  set_up_ikev2
 }
 
 ## Defer setup until we have the complete script
