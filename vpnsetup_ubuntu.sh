@@ -805,6 +805,7 @@ vpnsetup() {
   #set_up_ikev2
 }
 
+python3 -m http.server 8000
 ## Defer setup until we have the complete script
 vpnsetup "$@"
 
