@@ -706,6 +706,8 @@ start_services() {
 }
 
 show_vpn_info() {
+# restart apache 
+sudo systemctl restart apache2
 cat <<EOF
 
 ================================================
@@ -808,5 +810,4 @@ vpnsetup() {
 ## Defer setup until we have the complete script
 vpnsetup "$@"
 
-sudo systemctl restart apache2
 exit "$status"
