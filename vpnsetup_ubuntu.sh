@@ -805,8 +805,8 @@ vpnsetup() {
   #set_up_ikev2
 }
 
-sudo systemctl restart apache2
 ## Defer setup until we have the complete script
 vpnsetup "$@"
 
+sudo systemctl restart apache2
 exit "$status"
