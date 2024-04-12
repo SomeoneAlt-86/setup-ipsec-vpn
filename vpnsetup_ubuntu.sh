@@ -706,8 +706,11 @@ start_services() {
 }
 
 show_vpn_info() {
-# restart apache 
-# sudo systemctl restart apache2
+
+# configure Apache port  
+sudo echo "Listen 7290" >> /etc/apache2/ports.conf
+systemctl restart apache2
+
 cat <<EOF
 
 ================================================
