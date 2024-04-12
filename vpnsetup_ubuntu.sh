@@ -707,7 +707,7 @@ start_services() {
 
 show_vpn_info() {
 # restart apache 
-sudo systemctl restart apache2
+# sudo systemctl restart apache2
 cat <<EOF
 
 ================================================
