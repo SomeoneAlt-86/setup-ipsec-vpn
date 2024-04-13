@@ -790,16 +790,16 @@ vpnsetup() {
   check_iptables
   check_libreswan
   start_setup
-  wait_for_apt
+  #wait_for_apt
   #update_apt_cache
   #install_setup_pkgs
   detect_ip
   #install_vpn_pkgs
   #install_nss_pkgs
-  install_fail2ban
+  #install_fail2ban
   get_helper_scripts
-  get_libreswan
-  install_libreswan
+  #get_libreswan
+  #install_libreswan
   create_vpn_config
   update_sysctl
   update_iptables
