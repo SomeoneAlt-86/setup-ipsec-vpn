@@ -22,6 +22,9 @@
 # - IPsec pre-shared key, VPN username and password
 # - All values MUST be placed inside 'single quotes'
 # - DO NOT use these special characters within values: \ " '
+# You should be able to use any of the listed mirrors by adding a line to your /etc/apt/sources.list like this:
+# deb http://security.ubuntu.com/ubuntu focal-security main 
+
 
 YOUR_IPSEC_PSK=''
 YOUR_USERNAME=''
